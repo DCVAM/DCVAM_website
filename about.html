@@ -3,90 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evolution & Big Ideas | DCVAM</title>
-    <link rel="stylesheet" href="../layouts/assets/css/style.css">
+    <title>About DCVAM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="layouts/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
-        .post-box {
-            background: linear-gradient(145deg, #222222, #1a1a1a);
+        .team-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .team-member {
+            background: #2a2a2a;
             padding: 20px;
             border-radius: 15px;
-            text-align: center;
-            font-size: 18px;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-            color: #FFD700;
+            width: 280px;
             box-shadow: 0 2px 4px rgba(200, 200, 200, 0.15);
-        }
-        .post-box:hover {
-            transform: scale(1.05);
-            background: #FFD700;
-            color: #000000;
-            box-shadow: 0 4px 8px rgba(200, 200, 200, 0.25);
-        }
-        .weekly-grid {
+            color: #FFD700;
             text-align: center;
-            padding: 40px;
         }
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .social-links a {
+            display: block;
+            color: #FFD700;
+            text-decoration: none;
+            margin-top: 5px;
         }
     </style>
 </head>
 <body>
-
-    <!-- Navigation Bar -->
     <header>
-        <nav class="navbar" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
-            <div class="logo">
-                <a href="../index.html"><img src="../layouts/assets/images/logo.jpg" alt="DCVAM Logo" style="height: 50px;"></a>
-            </div>
-            <ul class="nav-links" style="list-style: none; display: flex; gap: 20px; margin: 0; margin-left: auto;">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+        <div style="display: flex; align-items: center;">
+            <img src="layouts/assets/images/logo.jpg" alt="Logo" style="height: 50px; margin-right: 15px;">
+            <h1>Drone Control Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">home</span> Home</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Evolution & Big Ideas</h1>
-        <p>Understanding the history, breakthroughs, and future of drone control and robotics.</p>
-    </section>
-
-    <!-- Overview Section -->
-    <section class="overview">
-        <p>
-            The evolution of drones is a fascinating journey from early military applications to 
-            their role in industrial inspection, agriculture, and even space exploration. This section 
-            explores key breakthroughs in control theory, robotics, and AI that have shaped modern drone technology.
-        </p>
-    </section>
-
-    <!-- Weekly Posts Grid -->
-    <section class="weekly-grid">
-        <h2>Weekly Insights</h2>
-        <div class="grid-container">
-            <div class="post-box" onclick="location.href='posts/week1.html';">Week 1: The Origins of Control Theory</div>
-            <div class="post-box" onclick="location.href='posts/week2.html';">Week 2: The First Drones & Automation</div>
-            <div class="post-box" onclick="location.href='posts/week3.html';">Week 3: PID Controllers & Stability</div>
-            <div class="post-box" onclick="location.href='posts/week4.html';">Week 4: AI & Machine Learning in Drones</div>
-            <div class="post-box" onclick="location.href='posts/week5.html';">Week 5: Advances in Nonlinear Control</div>
-            <div class="post-box" onclick="location.href='posts/week6.html';">Week 6: Aerospace & Swarm Robotics</div>
-            <div class="post-box" onclick="location.href='posts/week7.html';">Week 7: Reinforcement Learning in UAVs</div>
-            <div class="post-box" onclick="location.href='posts/week8.html';">Week 8: The Ethics of Autonomous Drones</div>
-            <div class="post-box" onclick="location.href='posts/week9.html';">Week 9: Future of Control Theory</div>
-            <div class="post-box" onclick="location.href='posts/week10.html';">Week 10: Final Thoughts & Trends</div>
-        </div>
-    </section>
-
-    <!-- Footer -->
+    <main>
+        <h2 class="primary-text">About Us</h2>
+        <p class="secondary-text">Meet the team behind Drone Control Hub.</p>
+        <section class="team-container">
+            <div class="team-member">
+                <img src="layouts/assets/images/vezzz.png" alt="Vezhish Ali">
+                <div class="team-info">
+                    <h2>Vezhish Ali</h2>
+                    <p class="role">Robotics Engineer</p>
+                    <p>Vezhish specializes in designing and controlling robotic systems, particularly in aerial robotics.</p>
+                    <p>Email: <a href="mailto:va07602@st.habib.edu.pk">va07602@st.habib.edu.pk</a></p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="layouts/assets/images/abdullah.jpeg" alt="Abdullah Ibrahim">
+                <div class="team-info">
+                    <h2>Abdullah Ibrahim</h2>
+                    <p class="role">Robotics Engineer</p>
+                    <p>Abdullah specializes in designing and controlling robotic systems, particularly in aerial robotics.</p>
+                    <p>Email: <a href="mailto:ma07534@st.habib.edu.pk">ma07534@st.habib.edu.pk</a></p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="layouts/assets/images/muslim.jpeg" alt="Muslim Hussain">
+                <div class="team-info">
+                    <h2>Muslim Hussain</h2>
+                    <p class="role">Robotics Engineer</p>
+                    <p>Muslim specializes in designing and controlling robotic systems, particularly in aerial robotics.</p>
+                    <p>Email: <a href="mailto:sh07730@st.habib.edu.pk">sh07730@st.habib.edu.pk</a></p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>© 2025 DCVAM. All Rights Reserved.</p>
+        <p class="secondary-text">&copy; 2025 DCVAM</p>
     </footer>
-
 </body>
 </html>
