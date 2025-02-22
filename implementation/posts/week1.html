@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Blog</title>
+    <link rel="stylesheet" href="../../layouts/assets/css/blogPost.css">
+
+    <!-- MathJax for LaTeX Support -->
+    <script type="text/javascript" async
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" async
+        id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html">DCVAM</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <!-- <li><a href="evolution.html">Evolution & Big Ideas</a></li>
+                <li><a href="implementation.html">Implementation & Experimentation</a></li>
+                <li><a href="dynamics.html">Dynamics & Science</a></li> -->
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header>
+        <h1>Technical Blog on Quantum Computing</h1>
+        <p>Exploring the depths of Quantum Mechanics and Computation</p>
+    </header>
+
+    <main>
+        <article>
+
+            <!-- Introduction -->
+            <section>
+                <h2>Introduction</h2>
+                <p>Quantum computing has revolutionized the way we think about computational power. It leverages quantum mechanics to perform computations far beyond the capabilities of classical computers.</p>
+            </section>
+
+            <!-- Image -->
+            <section>
+                <h2>Understanding Qubits</h2>
+                <img src="qubit.jpg" alt="Quantum Qubit Representation">
+                <p>A qubit can exist in a superposition of states, unlike classical bits.</p>
+            </section>
+
+            <!-- LaTeX Equation -->
+            <section>
+                <h2>Mathematical Representation</h2>
+                <p>In quantum mechanics, a qubit is represented as a linear combination of basis states:</p>
+                <p>$$ |\psi\rangle = \alpha |0\rangle + \beta |1\rangle $$</p>
+                <p>where \( \alpha \) and \( \beta \) are complex numbers satisfying \( |\alpha|^2 + |\beta|^2 = 1 \).</p>
+            </section>
+
+            <!-- IEEE Citation -->
+            <section>
+                <h2>Quantum Algorithms</h2>
+                <p>One of the most famous quantum algorithms is Shor's algorithm, which can factorize large integers exponentially faster than classical algorithms <a href="#ref1">[1]</a>.</p>
+            </section>
+
+            <!-- Hyperlink -->
+            <section>
+                <h2>Further Reading</h2>
+                <p>For more details on quantum computing, check out <a href="https://quantum-computing.ibm.com/" target="_blank">IBM Quantum Computing</a>.</p>
+            </section>
+
+            <!-- IEEE References -->
+            <section>
+                <h2>References</h2>
+                <ol>
+                    <li id="ref1">P. W. Shor, "Algorithms for quantum computation: discrete logarithms and factoring," in Proceedings of the 35th Annual Symposium on Foundations of Computer Science, 1994, pp. 124-134.</li>
+                    <li>A. M. Turing, "On computable numbers, with an application to the Entscheidungsproblem," Proceedings of the London Mathematical Society, vol. 42, pp. 230-265, 1936.</li>
+                </ol>
+            </section>
+
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Technical Blog | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
