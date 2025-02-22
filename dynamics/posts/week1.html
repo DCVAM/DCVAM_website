@@ -3,89 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Blog</title>
-    <link rel="stylesheet" href="../../layouts/assets/css/blogPost.css">
-
-    <!-- MathJax for LaTeX Support -->
-    <script type="text/javascript" async
-        src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script type="text/javascript" async
-        id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
+    <title>Week 1: The Origins of Control Theory | DCVAM</title>
+    <link rel="stylesheet" href="../../_layouts/assets/css/blogPost.css">
+    <script type="text/javascript" async src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" async id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            background: linear-gradient(180deg, #1a1a1a, #2a2a2a);
+            color: #FFD700;
+            font-family: 'Newsreader', serif;
+            margin: 0;
+            padding: 0;
+        }
+        .blog-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #222222;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(200, 200, 200, 0.2);
+        }
+        h1, h2 {
+            color: #FFD700;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #1a1a1a;
+            box-shadow: 0 -2px 5px rgba(200, 200, 200, 0.2);
+        }
+    </style>
 </head>
 <body>
 
     <!-- Navigation Bar -->
     <header>
-        <nav class="navbar">
+        <nav class="navbar" style="display: flex; align-items: center; padding: 10px 20px; justify-content: space-between;">
             <div class="logo">
-                <a href="../index.html">DCVAM</a>
+                <a href="../../index.html"><img src="../../_layouts/assets/images/logo.jpg" alt="DCVAM Logo" style="height: 50px;"></a>
             </div>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <!-- <li><a href="evolution.html">Evolution & Big Ideas</a></li>
-                <li><a href="implementation.html">Implementation & Experimentation</a></li>
-                <li><a href="dynamics.html">Dynamics & Science</a></li> -->
-                <li><a href="about.html">About</a></li>
+            <ul class="nav-links" style="list-style: none; display: flex; gap: 20px; margin: 0; margin-left: auto; align-items: center;">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../about.html">About</a></li>
             </ul>
         </nav>
     </header>
 
-    <header>
-        <h1>Technical Blog on Quantum Computing</h1>
-        <p>Exploring the depths of Quantum Mechanics and Computation</p>
-    </header>
+    <main class="blog-container">
+        <h1>Week 1: The Origins of Control Theory</h1>
+        <p>Control theory has been a crucial part of engineering and automation since the early days of machinery. From ancient water clocks to modern drone stabilization systems, control systems help maintain stability and precision.</p>
 
-    <main>
-        <article>
+        <h2>Early Examples of Control Systems</h2>
+        <p>One of the earliest examples of feedback control was the **centrifugal governor**, developed by James Watt in the 18th century. This device automatically regulated steam engines by adjusting fuel input.</p>
+        <img src="../../_layouts/assets/images/governor.jpg" alt="Centrifugal Governor">
 
-            <!-- Introduction -->
-            <section>
-                <h2>Introduction</h2>
-                <p>Quantum computing has revolutionized the way we think about computational power. It leverages quantum mechanics to perform computations far beyond the capabilities of classical computers.</p>
-            </section>
+        <h2>Mathematical Foundations</h2>
+        <p>Control systems are often modeled using differential equations. The basic feedback loop can be represented as:</p>
+        <p>$$ G(s) = \frac{K}{s + a} $$</p>
+        <p>where \( G(s) \) is the transfer function, \( K \) is the system gain, and \( a \) is the damping factor.</p>
 
-            <!-- Image -->
-            <section>
-                <h2>Understanding Qubits</h2>
-                <img src="qubit.jpg" alt="Quantum Qubit Representation">
-                <p>A qubit can exist in a superposition of states, unlike classical bits.</p>
-            </section>
+        <h2>Impact on Drone Control</h2>
+        <p>Modern drones rely on **PID controllers** (Proportional-Integral-Derivative controllers) to stabilize their flight and respond to external disturbances effectively.</p>
 
-            <!-- LaTeX Equation -->
-            <section>
-                <h2>Mathematical Representation</h2>
-                <p>In quantum mechanics, a qubit is represented as a linear combination of basis states:</p>
-                <p>$$ |\psi\rangle = \alpha |0\rangle + \beta |1\rangle $$</p>
-                <p>where \( \alpha \) and \( \beta \) are complex numbers satisfying \( |\alpha|^2 + |\beta|^2 = 1 \).</p>
-            </section>
-
-            <!-- IEEE Citation -->
-            <section>
-                <h2>Quantum Algorithms</h2>
-                <p>One of the most famous quantum algorithms is Shor's algorithm, which can factorize large integers exponentially faster than classical algorithms <a href="#ref1">[1]</a>.</p>
-            </section>
-
-            <!-- Hyperlink -->
-            <section>
-                <h2>Further Reading</h2>
-                <p>For more details on quantum computing, check out <a href="https://quantum-computing.ibm.com/" target="_blank">IBM Quantum Computing</a>.</p>
-            </section>
-
-            <!-- IEEE References -->
-            <section>
-                <h2>References</h2>
-                <ol>
-                    <li id="ref1">P. W. Shor, "Algorithms for quantum computation: discrete logarithms and factoring," in Proceedings of the 35th Annual Symposium on Foundations of Computer Science, 1994, pp. 124-134.</li>
-                    <li>A. M. Turing, "On computable numbers, with an application to the Entscheidungsproblem," Proceedings of the London Mathematical Society, vol. 42, pp. 230-265, 1936.</li>
-                </ol>
-            </section>
-
-        </article>
+        <h2>Further Reading</h2>
+        <p>To dive deeper into control theory, check out this <a href="https://en.wikipedia.org/wiki/Control_theory" target="_blank">Wikipedia article</a>.</p>
     </main>
 
     <footer>
-        <p>&copy; 2024 Technical Blog | All Rights Reserved</p>
+        <p>&copy; 2025 DCVAM. All Rights Reserved.</p>
     </footer>
 
 </body>

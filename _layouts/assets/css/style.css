@@ -1,0 +1,87 @@
+body {
+    background: linear-gradient(180deg, #1a1a1a, #2a2a2a);
+    color: #FFD700;
+    font-family: 'Newsreader', serif;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease;
+}
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(200, 200, 200, 0.2);
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+main {
+    padding: 40px;
+    text-align: center;
+}
+.maintained {
+    font-size: 14px;
+    background: linear-gradient(90deg, #FFD700, #888888);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+.grid-item {
+    background: linear-gradient(145deg, #222222, #1a1a1a);
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: #FFD700;
+    box-shadow: 0 2px 4px rgba(200, 200, 200, 0.15);
+}
+.grid-item:hover {
+    transform: scale(1.05);
+    background: #FFD700;
+    color: #000000;
+    box-shadow: 0 4px 8px rgba(200, 200, 200, 0.25);
+}
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 -2px 5px rgba(200, 200, 200, 0.2);
+}
+.about-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.about-card {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(200, 200, 200, 0.15);
+    color: #FFD700;
+}

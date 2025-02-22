@@ -3,22 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamics & Science | DCVAM</title>
-    <link rel="stylesheet" href="../layouts/assets/css/style.css">
+    <title>Evolution & Big Ideas | DCVAM</title>
+    <link rel="stylesheet" href="../_layouts/assets/css/style.css">
+    <style>
+        .post-box {
+            background: linear-gradient(145deg, #222222, #1a1a1a);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            color: #FFD700;
+            box-shadow: 0 2px 4px rgba(200, 200, 200, 0.15);
+        }
+        .post-box:hover {
+            transform: scale(1.05);
+            background: #FFD700;
+            color: #000000;
+            box-shadow: 0 4px 8px rgba(200, 200, 200, 0.25);
+        }
+        .weekly-grid {
+            text-align: center;
+            padding: 40px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
 
     <!-- Navigation Bar -->
     <header>
-        <nav class="navbar">
+        <nav class="navbar" style="display: flex; align-items: center; padding: 10px 20px; justify-content: space-between;">
             <div class="logo">
-                <a href="../index.html">DCVAM</a>
+                <a href="../index.html"><img src="../_layouts/assets/images/logo.jpg" alt="DCVAM Logo" style="height: 50px;"></a>
             </div>
-            <ul class="nav-links">
+            <ul class="nav-links" style="list-style: none; display: flex; gap: 20px; margin: 0; margin-left: auto; align-items: center;">
                 <li><a href="../index.html">Home</a></li>
-                <!-- <li><a href="evolution.html">Evolution & Big Ideas</a></li>
-                <li><a href="implementation.html">Implementation & Experimentation</a></li>
-                <li><a href="dynamics.html">Dynamics & Science</a></li> -->
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
@@ -26,8 +53,8 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Dynamics & Science</h1>
-        <p>Understand the physics and mathematics behind drone control.</p>
+        <h1>Evolution & Big Ideas</h1>
+        <p>Understanding the history, breakthroughs, and future of drone control and robotics.</p>
     </section>
 
     <!-- Overview Section -->
