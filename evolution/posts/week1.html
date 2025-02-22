@@ -95,20 +95,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Promo</title>
     <style>
+        @font-face {
+            font-family: myFirstFont;
+            src: url("../../layouts/assets/fonts/MigaeSemibold-3zd2M.otf");
+        }
         body {
-            font-family: Arial, sans-serif;
+            /* font-family: Arial, sans-serif; */
             margin: 0;
             padding: 0;
-            background-color: #2a2a2a;
+            background-color: white;
         }
         .container {
             display: flex;
-            max-width: 1200px;
-            margin: 50px auto;
-            background: #2a2a2a;
+            /* max-width: 1200px; */
+            /* margin: 50px; */
+            margin-left: 300px;
+            background: white;
             padding: 40px;
             border-radius: 10px;
-            color:#2a2a2a;
+            color:white;
         }
         .book-cover {
             background-color: #2a2a2a;
@@ -140,14 +145,17 @@
             padding: 20px;
             margin-left: 350px; /* Adjust to prevent overlap with fixed element */
             margin-bottom: 400px;
+            padding-left: 0;
         }
         .content h1 {
-            font-size: 2.5rem;
-            color: #FFD700;
+            /* font-family:'Migae'; */
+            font-family: 'myFirstFont';
+            font-size: 4rem;
+            color: black;
         }
         .content p {
-            font-size: 1rem;
-            color: #FFD700;
+            font-size: 1.5rem;
+            color: black;
             line-height: 1.5;
         }
         .buttons {
@@ -270,10 +278,10 @@
 
 
             </p>
-            <div class="buttons">
+            <!-- <div class="buttons">
                 <a href="#" class="btn buy-btn">Buy Now – $10.99</a>
                 <a href="#" class="btn download-btn">Download 1st Chapter</a>
-            </div>
+            </div> -->
         </div>
     </div>
 </body>
